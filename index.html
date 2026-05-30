@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laishram Amarjit | Portfolio</title>
+  <meta name="description" content="Portfolio of Laishram Amarjit, B.Tech CSE student and aspiring software developer.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="logo" href="#hero">Laishram Amarjit</a>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="#hero" aria-label="Go to home">Laishram Amarjit</a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-        <span></span>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
       </button>
@@ -24,90 +24,133 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+        <span class="theme-icon" aria-hidden="true">Dark</span>
+      </button>
     </nav>
   </header>
 
   <main>
     <section class="hero section" id="hero">
-      <div class="hero-content reveal">
-        <p class="eyebrow">CSE BTech Student</p>
-        <h1>Hi, I am <span>Laishram Amarjit</span>.</h1>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">B.Tech CSE Student / Software Developer</p>
+        <h1>Building clean, practical software with strong fundamentals.</h1>
         <p class="hero-text">
-          I am preparing for SDE roles by building strong foundations in DSA,
-          web development, and practical project work.
+          I am a Computer Science Engineering student at Thapar Institute of Engineering and Technology,
+          focused on DSA, Java, frontend development, and building useful projects with clear execution.
         </p>
-        <div class="hero-actions">
-          <a class="btn primary-btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn secondary-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn ghost-btn" href="#" download>Resume</a>
+        <div class="hero-actions" aria-label="Profile links">
+          <a class="btn primary-btn" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="btn secondary-btn" href="https://github.com/amarjit81" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn secondary-btn" href="https://www.linkedin.com/in/laishram-amarjit-a115b436b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
+        <a class="email-link" href="mailto:laishram661@gmail.com">laishram661@gmail.com</a>
       </div>
 
-      <div class="hero-card reveal">
-        <p class="card-label">Current Focus</p>
-        <h2>SDE Preparation</h2>
-        <ul>
-          <li>Solving DSA problems consistently</li>
-          <li>Building clean frontend projects</li>
-          <li>Learning backend basics with Node.js</li>
-        </ul>
-      </div>
+      <figure class="hero-avatar reveal" aria-label="Laishram Amarjit profile photo">
+        <img src="profile.jpg" alt="Laishram Amarjit">
+      </figure>
     </section>
 
     <section class="section" id="about">
       <div class="section-heading reveal">
-        <p class="eyebrow">About Me</p>
-        <h2>Focused on becoming a strong software developer.</h2>
+        <p class="eyebrow">About</p>
+        <h2>A disciplined developer in progress, focused on fundamentals and thoughtful interfaces.</h2>
       </div>
-      <p class="about-text reveal">
-        I am a Computer Science Engineering BTech student interested in software
-        development, problem solving, and building useful web applications. I am
-        currently improving my DSA skills and learning how to write clean,
-        maintainable code for real projects.
-      </p>
+      <div class="split-layout">
+        <p class="about-text reveal">
+          I enjoy solving algorithmic problems, building web interfaces, and understanding how software systems are structured.
+          My current work is centered on strengthening DSA, Java OOP, JavaScript, and clean UI development through practical projects.
+        </p>
+        <div class="quick-facts reveal" aria-label="Profile highlights">
+          <div>
+            <span>CGPA</span>
+            <strong>9.45/10</strong>
+          </div>
+          <div>
+            <span>Graduation</span>
+            <strong>2028</strong>
+          </div>
+          <div>
+            <span>Focus</span>
+            <strong>SDE roles</strong>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="skills">
       <div class="section-heading reveal">
         <p class="eyebrow">Skills</p>
-        <h2>Technologies and topics I am learning.</h2>
+        <h2>Technical areas I am actively building.</h2>
       </div>
-      <div class="skills-grid reveal">
-        <span>C++</span>
-        <span>DSA</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub</span>
-        <span>Basic Node.js</span>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <h3>Programming</h3>
+          <p>Java, C++, OOP, DSA, Minimax Algorithm</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, responsive design, accessible UI</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Tools</h3>
+          <p>GitHub, browser dev tools, project documentation</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Focus Areas</h3>
+          <p>Clean code, interview preparation, practical product thinking</p>
+        </article>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="section-heading reveal">
         <p class="eyebrow">Projects</p>
-        <h2>Practice projects for learning and interviews.</h2>
+        <h2>Selected work with direct GitHub access.</h2>
       </div>
-      <div class="projects-grid">
+      <div class="projects-list">
         <article class="project-card reveal">
-          <p class="project-number">01</p>
-          <h3>DSA Tracker</h3>
-          <p>A simple tracker to organize DSA questions, topics, progress, and revision notes.</p>
-          <a href="#">View Project</a>
+          <div>
+            <p class="project-number">01</p>
+            <h3>Lost and Found Portal</h3>
+            <p>A responsive portal concept for reporting, browsing, and matching lost or found items.</p>
+          </div>
+          <div class="project-meta">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <a class="project-link" href="https://github.com/amarjit81/lost-found-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </article>
 
         <article class="project-card reveal">
-          <p class="project-number">02</p>
-          <h3>Portfolio Website</h3>
-          <p>A personal website to showcase skills, projects, education, and contact links.</p>
-          <a href="#">View Project</a>
+          <div>
+            <p class="project-number">02</p>
+            <h3>Tic Tac Toe Game</h3>
+            <p>A Java game built with OOP principles and Minimax logic for intelligent computer moves.</p>
+          </div>
+          <div class="project-meta">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Minimax</span>
+            <a class="project-link" href="https://github.com/amarjit81/Amarjit-Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </article>
 
         <article class="project-card reveal">
-          <p class="project-number">03</p>
-          <h3>Full Stack Task Manager</h3>
-          <p>A task management app idea with authentication, CRUD features, and a backend API.</p>
-          <a href="#">View Project</a>
+          <div>
+            <p class="project-number">03</p>
+            <h3>Flipkart Clone Frontend</h3>
+            <p>A frontend clone focused on layout accuracy, product sections, navigation, and responsive styling.</p>
+          </div>
+          <div class="project-meta">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <a class="project-link" href="https://github.com/amarjit81/Amarjit-Flipkart-Clone" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
         </article>
       </div>
     </section>
@@ -115,34 +158,58 @@
     <section class="section" id="education">
       <div class="section-heading reveal">
         <p class="eyebrow">Education</p>
-        <h2>BTech in Computer Science Engineering.</h2>
+        <h2>Academic foundation in computer science.</h2>
       </div>
-      <div class="education-box reveal">
-        <h3>Computer Science Engineering</h3>
-        <p>BTech Student</p>
-        <p>Currently building programming, DSA, web development, and software engineering fundamentals.</p>
+      <div class="timeline reveal">
+        <article class="timeline-item">
+          <span class="timeline-year">2028</span>
+          <div>
+            <h3>Thapar Institute of Engineering and Technology</h3>
+            <p>B.Tech in Computer Science Engineering</p>
+          </div>
+          <strong>CGPA 9.45/10</strong>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">Class 12</span>
+          <div>
+            <h3>Senior Secondary</h3>
+            <p>Academic performance</p>
+          </div>
+          <strong>93.6%</strong>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-year">Class 10</span>
+          <div>
+            <h3>Secondary</h3>
+            <p>Academic performance</p>
+          </div>
+          <strong>92.6%</strong>
+        </article>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Let us connect.</h2>
-      </div>
-      <p class="contact-text reveal">
-        I am open to internships, learning opportunities, and beginner-friendly
-        software development projects.
-      </p>
-      <div class="contact-actions reveal">
-        <a class="btn primary-btn" href="mailto:your.email@example.com">Email Me</a>
-        <a class="btn secondary-btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn ghost-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to internships, collaborations, and software development opportunities.</h2>
+          <p class="contact-text">
+            The fastest way to reach me is by email:
+            <a href="mailto:laishram661@gmail.com">laishram661@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary-btn" href="mailto:laishram661@gmail.com">Email</a>
+          <a class="btn secondary-btn" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="btn secondary-btn" href="https://github.com/amarjit81" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn secondary-btn" href="https://www.linkedin.com/in/laishram-amarjit-a115b436b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Made by Laishram Amarjit</p>
+    <p>(c) 2026 Laishram Amarjit. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
   <script src="script.js"></script>
